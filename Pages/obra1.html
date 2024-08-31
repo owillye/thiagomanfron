@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra 01</title>
+    <link rel="stylesheet" href="../CSS/style2.css">
+</head>
+<body>
+    <a href="../Pages/index.html">Voltar para Página Principal</a>
+    <h2>MENU DE BUSCA</h2>
+<p>Procure pela linguagem específica</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Busca.." title="Tipo da Categoria">
+    <ul id="myMenu">
+      <li><a href="#HTML">HTML</a></li>
+      <li><a href="#CSS">CSS</a></li>
+      <li><a href="#JAVASCRIPT">JavaScript</a></li>
+      <li><a href="#PHP">PHP</a></li>
+      <li><a href="#PYTHON">Python</a></li>
+            
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Linguagens de Programação</h2>
+    <p>Uma breve história sobre as linguagens de programação.</p>
+    
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<div class="paragrafos">
+    <p id="HTML">HTML - A linguagem HTML foi desenvolvida por Tim Berners-Lee e, na época, em torno de 1989, não se tratava de uma especificação, mas sim de uma forma de comunicação entre pesquisadores. Uma das primeiras funçõe das páginas web era apresentar currículos online de integrantes de universidades e centros de pesquisa americanos.</p>
+    <a href="">Voltar</a>
+
+    <p id="CSS">CSS - O CSS, ou Cascading Style Sheets, é o alicerce estilístico de praticamente tudo o que vemos na web. Ele é o artista responsável por embelezar e organizar os elementos em uma página da web, criando layouts atraentes e proporcionando uma experiência visual agradável aos usuários. Para entender completamente sua importância, vamos desvendar o significado e o papel do CSS na construção da web.</P>
+    <a href="">Voltar</a>
+    
+    <p id="JAVASCRIPT">JAVASCRIPT -  é uma linguagem de programação leve que os desenvolvedores usam para criar interações mais dinâmicas ao desenvolver páginas da Web, aplicativos, servidores, jogos, etc. 
+    
+    Ele cria elementos para melhorar a interação dos visitantes do site com as páginas da web, como menus suspensos, gráficos animados e cores de fundo dinâmicas.
+        
+    Geralmente o Javascript é usado como complemento às linguagens com HTML, CSS e PHP,  mas a  linguagem funciona bem também com CSS na formatação de elementos HTML. No entanto, ainda mantém a interação do usuário, algo que o CSS não pode fazer sozinho.</p>
+    <a href="">Voltar</a>
+    
+    <p id="PHP">PHP - O PHP como é conhecido hoje, é na verdade o sucessor para um produto chamado PHP/FI. Criado em 1994 por Rasmus Lerdof, a primeira encarnação do PHP foi um simples conjunto de binários Common Gateway Interface (CGI) escrito em linguagem de programação C. Originalmente usado para acompanhamento de visitas para seu currículo online, ele nomeou o conjunto de scripts de "Personal Home Page Tools" mais frequentemente referenciado como "PHP Tools." Ao longo do tempo, mais funcionalidades foram desejadas, e Rasmus reescreveu o PHP Tools, produzindo uma maior e rica implementação. Este novo modelo foi capaz de interações com Banco de Dados e mais, fornecendo uma estrutura no qual os usuários poderiam desenvolver simples e dinâmicas aplicações web, como um livros de visitas. Em Junho de 1995, Rasmus » liberou o código fonte do PHP Tools para o público, o que permitiu que desenvolvedores usassem da forma como desejassem. Isso permitiu - e encorajou - usuários a fornecerem correções para bugs no código, e em geral, aperfeiçoá-lo.  </p>
+    <a href="">Voltar</a>
+    
+    <p id="PYTHON"> PYTHON - A história do Python começa em dezembro de 1989, quando Guido van Rossum, um programador holandês, iniciou o desenvolvimento da linguagem como um projeto de hobby. Ele estava procurando criar uma linguagem que fosse fácil de entender e que incentivasse uma sintaxe clara e legível. A primeira versão do Python, 0.9.0, foi lançada em fevereiro de 1991, e já incluía algumas das características fundamentais que definiriam a linguagem, como exceções, funções e tipos de dados modulares. </p>
+    <a href="">Voltar</a>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
